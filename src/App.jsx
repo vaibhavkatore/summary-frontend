@@ -13,8 +13,7 @@ export default function App() {
 
 const styles = {
   container: {
-    maxWidth: "800px",
-    margin: "30px auto",
+    margin: "30px 10px",
     fontFamily: "Arial, sans-serif"
   }
 };

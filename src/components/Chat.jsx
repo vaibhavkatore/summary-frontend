@@ -81,7 +81,9 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     gap: "8px",
-    marginBottom: "10px"
+    marginBottom: "10px",
+    height: '50vh',
+    overflowY: 'scroll'
   },
   msg: {
     padding: "8px 12px",
