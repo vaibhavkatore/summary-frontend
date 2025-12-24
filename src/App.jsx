@@ -13,7 +13,7 @@ export default function App() {
 
 const styles = {
   container: {
-    width: "100%",
+    width: "100vw",
     fontFamily: "Arial, sans-serif"
   }
 };
