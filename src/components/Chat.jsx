@@ -45,7 +45,9 @@ export default function Chat() {
             style={{
               ...styles.msg,
               alignSelf: m.role === "user" ? "flex-end" : "flex-start",
-              background: m.role === "user" ? "#DCF8C6" : "#F1F0F0"
+              borderRadius: m.role === "user" ? "12px 0px 12px 12px" : "0px 12px 12px 12px",
+              backgroundColor: m.role === "user" ? "" : "#373737",
+              color: m.role === "user" ? "#ffffff" : "#fbf2f2"
             }}
           >
             {m.text}
@@ -80,7 +82,7 @@ const styles = {
     minHeight: "300px",
     display: "flex",
     flexDirection: "column",
-    gap: "8px",
+    gap: "15px",
     marginBottom: "10px",
     height: '50vh',
     overflowY: 'scroll'
@@ -88,7 +90,8 @@ const styles = {
   msg: {
     padding: "8px 12px",
     borderRadius: "12px",
-    maxWidth: "75%"
+    maxWidth: "75%",
+    border: '1px solid #ffffff'
   },
   inputBox: {
     display: "flex",
